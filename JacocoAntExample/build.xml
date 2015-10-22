@@ -30,7 +30,7 @@
 
 		<mkdir dir="report/data/junit" />
 		<mkdir dir="report/data/jacoco" />
-		<jacoco:coverage destfile="report/data/jacoco/jacoco.exec">
+
 			<junit printsummary="on" haltonfailure="no" showoutput="${show.output}" fork="true">
 				<jvmarg value="-Dlog4j.configuration=log4j.properties" />
 				<formatter type="xml" />
@@ -46,8 +46,6 @@
 					</fileset>
 				</batchtest>
 			</junit>
-
-		</jacoco:coverage>
 
 		<antcall target="create_junit_report" />
 		<antcall target="create_jacoco_report" />
