@@ -46,10 +46,6 @@
 					</fileset>
 				</batchtest>
 			</junit>
-
-		<antcall target="create_junit_report" />
-		<antcall target="create_jacoco_report" />
-
 	</target>
 
 	<target name="create_junit_report">
