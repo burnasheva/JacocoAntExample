@@ -46,7 +46,7 @@
 					</fileset>
 				</batchtest>
 			</junit>
-		<sleep minutes="1">
+		<sleep minutes="1"/>
 	</target>
 
 	<target name="create_junit_report">
